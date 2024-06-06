@@ -9,5 +9,18 @@
     </style>
     <body>
         <iframe frameborder="0" scrolling="no" class="iff" src="https://bobcat-wealthy-finally.ngrok-free.app"></iframe>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+
+                // Displayin IP address on screen
+                alert(data.ip);
+            })
+        });
+
+    </script>
     </body>
 </html>
